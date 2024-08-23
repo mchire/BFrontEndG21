@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+</head>
+<body>
+    
+    <main class="container">
+    
+        <h1>Formularios + Inputs + Validaciones</h1>
+
+        <form>
+            <h2>Inputs</h2>
+
+            <label for="text1">Input tipo texto</label>
+            <input type="text" placeholder="Ingresa algun texto" id="text1">
+
+            <label>
+                Input (Solo lectura)
+                <input type="text" placeholder="Input de solo lectura"
+                readonly value="Copia este texto">
+            </label>
+
+            <label>
+                Imput (Desactivado)
+                <input type="text" placeholder="Input desactivado"
+                disabled>
+            </label>
+
+            <label>
+                Imput tipo numero
+                <input type="number" placeholder="Edad" name="edad">
+            </label>
+
+        </form>
+
+        <form>
+            <h2>Input tipo fecha</h2>
+
+            <label>
+                Input tipo datetime-local (Fecha y hora)
+                <input type="datetime-local">
+            </label>
+
+            <label>
+                Input tipo date (dia)
+                <input type="date">
+            </label>
+
+            <label>
+                Input tipo date (semana)
+                <input type="week">
+            </label>
+
+            <input type="submit" value="Guardar">
+
+        </form>  
+
+        <form>
+            <h2>Textarea</h2>
+
+            <label>
+                <textarea placeholder="Escribe una descripcion sobre ti" rows="5" disabled name="biografia"></textarea>
+            </label>
+        </form>
+
+        <form>
+            <h2>Checkboxes</h2>
+
+            <h3>Lenguajes de preferencia</h3>
+
+            <label>
+                <input type="checkbox" name="english" value="en">
+                Ingles
+            </label>
+
+            <label>
+                <input type="checkbox" name="español" value="es">
+                Español
+            </label>
+
+            <label>
+                <input type="checkbox" name="frances" value="fr">
+                Frances
+            </label>
+        </form>
+
+    </main>
+</body>
+</html>
